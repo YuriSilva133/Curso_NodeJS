@@ -4,9 +4,10 @@ const endpoints = Router()
 import { calcularTotal, calcularValorparcela} from "../services/loja/pedidoCompletoService.js";
 
 import { validarPedidoCompleto } from "../validation/loja/pedidoCompletoValidation.js";
+/*
 import { logError } from "../utils/log.js";
 import { criarErro } from "../utils/error.js";
-
+*/
 
 //parametros combinados
 endpoints.post('/loja/pedido', (req, resp) => {
@@ -50,7 +51,7 @@ endpoints.post('/loja/pedido/completo', (req, resp) => {
         })
     } 
     catch (err) {
-        logError(err)
+        logErro(err)
         resp.status(400).send(criarErro(err))
     }
 })

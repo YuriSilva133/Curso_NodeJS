@@ -11,6 +11,8 @@ import 'dotenv/config.js'
 import cors from 'cors';
 servidor.use(cors());
 
+import './utils/global.js'
+
 import adicionarRotas from './rotas.js';
 
 //adiciona as rotas
