@@ -13,7 +13,6 @@ servidor.use(cors());
 
 import adicionarRotas from './rotas.js';
 
-
 //adiciona as rotas
 adicionarRotas(servidor)
 

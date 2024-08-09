@@ -7,8 +7,6 @@ import mensagemController from "./controller/mensagemController.js"
 import usuarioController from "./controller/usuarioController.js"
 
 export default function adicionarRotas(servidor) {
-
-
     // liberação dos arquivos
     servidor.use('/storage/perfil', express.static('./storage/perfil'))
     servidor.use('/storage/album', express.static('./storage/album'))
@@ -19,5 +17,4 @@ export default function adicionarRotas(servidor) {
     servidor.use(lojaController)
     servidor.use(mensagemController)
     servidor.use(usuarioController)
-
 }
